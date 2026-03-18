@@ -180,10 +180,9 @@ namespace JuegoPOO
             // pbImagenEnemigo
             // 
             pbImagenEnemigo.BorderStyle = BorderStyle.FixedSingle;
-            pbImagenEnemigo.Image = Properties.Resources.Enemigo;
-            pbImagenEnemigo.Location = new Point(639, 276);
+            pbImagenEnemigo.Location = new Point(639, 248);
             pbImagenEnemigo.Name = "pbImagenEnemigo";
-            pbImagenEnemigo.Size = new Size(126, 128);
+            pbImagenEnemigo.Size = new Size(126, 156);
             pbImagenEnemigo.SizeMode = PictureBoxSizeMode.Zoom;
             pbImagenEnemigo.TabIndex = 13;
             pbImagenEnemigo.TabStop = false;

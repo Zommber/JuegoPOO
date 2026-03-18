@@ -118,22 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Enemigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Enemigo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Guerrero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Guerrero.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondo fuego" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo fuego.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bosque" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bosque.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ogro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ogro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Arquero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Arquero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemigo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mago" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mago.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Arquero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Arquero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imagen para boton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagen para boton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

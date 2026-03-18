@@ -56,5 +56,7 @@ namespace JuegoPOO
             }
             return null;
         }
+
+        // metodo para restaurar la barra d ataque 
     }
 }

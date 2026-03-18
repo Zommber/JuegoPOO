@@ -93,6 +93,16 @@ namespace JuegoPOO.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fondo_fuego {
+            get {
+                object obj = ResourceManager.GetObject("Fondo fuego", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Guerrero {
             get {
                 object obj = ResourceManager.GetObject("Guerrero", resourceCulture);
@@ -103,9 +113,9 @@ namespace JuegoPOO.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mago {
+        internal static System.Drawing.Bitmap imagen_para_boton {
             get {
-                object obj = ResourceManager.GetObject("Mago", resourceCulture);
+                object obj = ResourceManager.GetObject("imagen para boton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +123,9 @@ namespace JuegoPOO.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ogro {
+        internal static System.Drawing.Bitmap Mago {
             get {
-                object obj = ResourceManager.GetObject("Ogro", resourceCulture);
+                object obj = ResourceManager.GetObject("Mago", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

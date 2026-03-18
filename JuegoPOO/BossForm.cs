@@ -30,6 +30,7 @@ namespace JuegoPOO
 
         // Vida máxima mostrada en las ProgressBar (se utilizan VidaMax del Personaje)
         private int vidaMaxJugador;
+        private PictureBox pictureBox1;
         private int vidaMaxEnemigo;
 
         public BossForm(Personaje jugador)
@@ -56,79 +57,86 @@ namespace JuegoPOO
             btnCurar = new Button();
             btnRendirse = new Button();
             txtLog = new TextBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pbImagenJugador).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbImagenEnemigo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pbImagenJugador
             // 
             pbImagenJugador.BorderStyle = BorderStyle.FixedSingle;
-            pbImagenJugador.Location = new Point(12, 12);
+            pbImagenJugador.Location = new Point(51, 90);
             pbImagenJugador.Name = "pbImagenJugador";
-            pbImagenJugador.Size = new Size(128, 128);
+            pbImagenJugador.Size = new Size(128, 155);
             pbImagenJugador.SizeMode = PictureBoxSizeMode.Zoom;
             pbImagenJugador.TabIndex = 0;
             pbImagenJugador.TabStop = false;
             // 
             // lblJugador
             // 
-            lblJugador.Location = new Point(150, 12);
+            lblJugador.Location = new Point(89, 25);
             lblJugador.Name = "lblJugador";
-            lblJugador.Size = new Size(420, 22);
+            lblJugador.Size = new Size(140, 22);
             lblJugador.TabIndex = 1;
             lblJugador.Text = "Jugador: -";
             // 
             // lblVidaJugador
             // 
-            lblVidaJugador.Location = new Point(150, 36);
+            lblVidaJugador.BackColor = Color.Red;
+            lblVidaJugador.Location = new Point(235, 90);
             lblVidaJugador.Name = "lblVidaJugador";
-            lblVidaJugador.Size = new Size(200, 20);
+            lblVidaJugador.Size = new Size(79, 20);
             lblVidaJugador.TabIndex = 2;
             lblVidaJugador.Text = "Vida: 0/0";
             // 
             // pbVidaJugador
             // 
-            pbVidaJugador.Location = new Point(146, 59);
+            pbVidaJugador.Location = new Point(29, 59);
             pbVidaJugador.Name = "pbVidaJugador";
-            pbVidaJugador.Size = new Size(540, 20);
+            pbVidaJugador.Size = new Size(309, 20);
             pbVidaJugador.TabIndex = 3;
             // 
             // pbImagenEnemigo
             // 
             pbImagenEnemigo.BorderStyle = BorderStyle.FixedSingle;
-            pbImagenEnemigo.Location = new Point(591, 111);
+            pbImagenEnemigo.Image = Properties.Resources.Enemigo;
+            pbImagenEnemigo.Location = new Point(689, 210);
             pbImagenEnemigo.Name = "pbImagenEnemigo";
-            pbImagenEnemigo.Size = new Size(128, 128);
+            pbImagenEnemigo.Size = new Size(129, 155);
             pbImagenEnemigo.SizeMode = PictureBoxSizeMode.Zoom;
             pbImagenEnemigo.TabIndex = 4;
             pbImagenEnemigo.TabStop = false;
             // 
             // lblEnemigo
             // 
-            lblEnemigo.Location = new Point(150, 200);
+            lblEnemigo.Location = new Point(664, 415);
             lblEnemigo.Name = "lblEnemigo";
-            lblEnemigo.Size = new Size(420, 22);
+            lblEnemigo.Size = new Size(140, 22);
             lblEnemigo.TabIndex = 5;
             lblEnemigo.Text = "Enemigo: -";
             // 
             // lblVidaEnemigo
             // 
-            lblVidaEnemigo.Location = new Point(150, 222);
+            lblVidaEnemigo.BackColor = Color.Red;
+            lblVidaEnemigo.Location = new Point(547, 345);
             lblVidaEnemigo.Name = "lblVidaEnemigo";
-            lblVidaEnemigo.Size = new Size(200, 20);
+            lblVidaEnemigo.Size = new Size(79, 20);
             lblVidaEnemigo.TabIndex = 6;
             lblVidaEnemigo.Text = "Vida: 0/0";
             // 
             // pbVidaEnemigo
             // 
-            pbVidaEnemigo.Location = new Point(150, 245);
+            pbVidaEnemigo.Location = new Point(519, 380);
             pbVidaEnemigo.Name = "pbVidaEnemigo";
-            pbVidaEnemigo.Size = new Size(540, 20);
+            pbVidaEnemigo.Size = new Size(309, 20);
             pbVidaEnemigo.TabIndex = 7;
             // 
             // btnAtacar
             // 
-            btnAtacar.Location = new Point(150, 310);
+            btnAtacar.BackgroundImage = Properties.Resources.imagen_para_boton;
+            btnAtacar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAtacar.Location = new Point(23, 418);
             btnAtacar.Name = "btnAtacar";
             btnAtacar.Size = new Size(100, 36);
             btnAtacar.TabIndex = 8;
@@ -138,7 +146,9 @@ namespace JuegoPOO
             // 
             // btnEspecial
             // 
-            btnEspecial.Location = new Point(283, 310);
+            btnEspecial.BackgroundImage = Properties.Resources.imagen_para_boton;
+            btnEspecial.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEspecial.Location = new Point(129, 418);
             btnEspecial.Name = "btnEspecial";
             btnEspecial.Size = new Size(100, 36);
             btnEspecial.TabIndex = 9;
@@ -148,7 +158,9 @@ namespace JuegoPOO
             // 
             // btnCurar
             // 
-            btnCurar.Location = new Point(428, 310);
+            btnCurar.BackgroundImage = Properties.Resources.imagen_para_boton;
+            btnCurar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCurar.Location = new Point(238, 418);
             btnCurar.Name = "btnCurar";
             btnCurar.Size = new Size(100, 36);
             btnCurar.TabIndex = 10;
@@ -158,26 +170,40 @@ namespace JuegoPOO
             // 
             // btnRendirse
             // 
-            btnRendirse.Location = new Point(563, 310);
+            btnRendirse.BackColor = SystemColors.ActiveCaptionText;
+            btnRendirse.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRendirse.ForeColor = Color.Red;
+            btnRendirse.Location = new Point(129, 473);
             btnRendirse.Name = "btnRendirse";
             btnRendirse.Size = new Size(100, 36);
             btnRendirse.TabIndex = 11;
             btnRendirse.Text = "Rendirse";
-            btnRendirse.UseVisualStyleBackColor = true;
+            btnRendirse.UseVisualStyleBackColor = false;
             btnRendirse.Click += BtnRendirse_Click;
             // 
             // txtLog
             // 
-            txtLog.Location = new Point(49, 373);
+            txtLog.Location = new Point(600, 452);
             txtLog.Multiline = true;
             txtLog.Name = "txtLog";
             txtLog.ReadOnly = true;
             txtLog.ScrollBars = ScrollBars.Vertical;
-            txtLog.Size = new Size(700, 128);
+            txtLog.Size = new Size(204, 70);
             txtLog.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Fondo_fuego;
+            pictureBox1.Location = new Point(12, 50);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(827, 362);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 13;
+            pictureBox1.TabStop = false;
             // 
             // BossForm
             // 
+            BackColor = Color.Black;
             ClientSize = new Size(863, 552);
             Controls.Add(pbImagenJugador);
             Controls.Add(lblJugador);
@@ -192,6 +218,7 @@ namespace JuegoPOO
             Controls.Add(btnCurar);
             Controls.Add(btnRendirse);
             Controls.Add(txtLog);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             Name = "BossForm";
@@ -200,6 +227,7 @@ namespace JuegoPOO
             Load += BossForm_Load;
             ((System.ComponentModel.ISupportInitialize)pbImagenJugador).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbImagenEnemigo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
